@@ -28,19 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            txtDisplay = new TextBox();
             SuspendLayout();
+            // 
+            // txtDisplay
+            // 
+            txtDisplay.Location = new Point(163, 69);
+            txtDisplay.Multiline = true;
+            txtDisplay.Name = "txtDisplay";
+            txtDisplay.Size = new Size(430, 243);
+            txtDisplay.TabIndex = 0;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtDisplay);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox txtDisplay;
     }
 }
